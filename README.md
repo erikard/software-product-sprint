@@ -1,6 +1,6 @@
-# Google Software Product Sprint
+# Rix's Google Software Product Sprint Repository
 
-This repo contains the projects you'll work on throughout SPS.
+This repo contains Rix's Portfolio and SPS projects!
 
 To get started:
 
