@@ -5,8 +5,8 @@
 
 body {
     background-color: whitesmoke;
-    text-decoration-color: white;
     font-family: arial;
+    color: darksalmon;
 }
 
 p {
@@ -46,10 +46,6 @@ img.cards {
     padding: 10px;
 }
 
-div{
-    color: darksalmon;
-}
-
 h1 {
     color: darksalmon;
     font-size: 50px;
@@ -65,6 +61,17 @@ h2 {
 
 ul {
 
+}
+
+ol {
+    text-align: center;
+}
+
+ol li {
+    list-style: none;
+    float: center;
+    line-height: 20px;
+    padding-left: 40px;
 }
 
 ul li {
