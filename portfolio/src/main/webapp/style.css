@@ -13,6 +13,7 @@ p {
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 10px;
+    margin-bottom: 10px;
     line-height: 2;
 }
 
@@ -129,4 +130,23 @@ div.category {
 
 #maintext {
     color: #696969;
+}
+
+#content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
+}
+
+#greeting-container {
+  margin-top: 20px;
+}
+
+button {
+    color: darksalmon;
+    background-color: mistyrose;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 40px;
+    font-size: 20px;
 }

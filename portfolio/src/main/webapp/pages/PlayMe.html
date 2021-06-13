@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Connect</title>
         <link rel="stylesheet" href="../style.css">
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
     </head>
     <body>
         <nav>
@@ -18,7 +18,12 @@
               <li><a href='PlayMe.html'>Interactive</a></li>
           </ul>
         </nav>
-        <h1><br>Check back soon for some fun stuff!<br><br></h1>
-       <img src="../images/mando.gif" alt="The Mandelorian gif">
-    </body>
+        <h1>Interactive</h1>
+            <p>Click here to get a random message:</p>
+            <button onclick="addRandomGreeting()">
+                Click Me!</button>
+            <p id="greeting-container"></p>
+            
+            <p>Click <a href="/greeting">here</a> to see the server response directly</p>
+        </body>
 </html>
