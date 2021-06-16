@@ -13,16 +13,13 @@
 // limitations under the License.
 
 /**
- * Adds a random statement to the page.
+ * Calls a servlet that responds with a random message
+ * to be sent back to the html page.
  */
-function addRandomStatement() {
-  const statements =
-      ['The only person I can control... is myself.', 'Remember to smile!', 'Some people only talk to you, so that they can talk about you. Don\'t give them that power!', 'Life is beautiful :)'];
+async function addRandomGreeting() {
+    const responseFromServer = await fetch('/greeting');
+    const textFromResponse = await responseFromServer.text();
 
-  // Pick a random statement.
-  const statement = statements[Math.floor(Math.random() * statements.length)];
-
-  // Add it to the page.
-  const statementContainer = document.getElementById('statement-container');
-  statementContainer.innerText = statement;
+    const greetingContainer = document.getElementById('greeting-container');
+    greetingContainer.innerText = textFromResponse;
 }
