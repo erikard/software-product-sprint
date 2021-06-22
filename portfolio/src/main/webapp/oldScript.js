@@ -13,15 +13,17 @@
 // limitations under the License.
 
 /**
- * Calls a servlet that responds with a random message
- * to be sent back to the html page.
+ * Adds a random greeting to the page.
  */
+function addRandomGreeting() {
+  const greetings =
+      ['Hope you are having an awesome day!', 'Remember to smile!', 'Some people only talk to you, so that they can talk about you. Don\'t give them that power!', 'Life is beautiful :)'];
 
-async function addRandomGreeting() {
-    const responseFromServer = await fetch('/greeting');
-    const textFromResponse = await responseFromServer.text();
+  // Pick a random greeting.
+  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
 
-    const greetingContainer = document.getElementById('greeting-container');
-    greetingContainer.innerText = textFromResponse;
+  // Add it to the page.
+  const greetingContainer = document.getElementById('greeting-container');
+  greetingContainer.innerText = greeting;
 }
 
